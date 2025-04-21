@@ -40,7 +40,7 @@ When the program starts, it presents the following options:
 
 ## 📅 Deadline
 
-Your project must be submitted by **…………., before 10:00 AM** ⏰
+Your project must be submitted by 22st, before 10:00 AM** ⏰
 
 ---
 
