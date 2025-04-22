@@ -10,6 +10,12 @@ void depositMoney () {
   
   print("=== Welcome to Deposit Page ===");
 
+  // This statment check if there is any "Account" in the list "accountList".
+  if (accountsList.isEmpty) {
+    print("\n\nThere is not any accounts, Taking you back to === Home Page ===");
+    return;
+  }
+
   String accountnum;
 
   while (true) {
@@ -31,11 +37,13 @@ void depositMoney () {
 
       int depositAmount = checkIntInput(depositAmountString);
       if (depositAmount > 0) {
-        accountsList[intAccountnum].setMoney(accountsList[intAccountnum].getMoney() + depositAmount);
-        accountsList[intAccountnum].transactionHistory.addAll({DateTime.now() : "deposit: $depositAmount SAR"});
-        print("\n\n");
-        print(" <<< The Money have been deposited successfully  >>>");
-        home();
+
+          accountsList[intAccountnum].setMoney(accountsList[intAccountnum].getMoney() + depositAmount);
+          accountsList[intAccountnum].transactionHistory.addAll({DateTime.now() : "deposit: $depositAmount SAR"});
+
+          print("\n\n");
+          print(" <<< The Money have been deposited successfully  >>>");
+          home();       
       }
       print("\n\n\x1B[33m!!! Sorry the amount to deposit is invalid, Please try again !!!\x1B[0m");
     }

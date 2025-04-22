@@ -6,6 +6,12 @@ void transactionHistory() {
 
   print("=== Welcome to Transaction History Page ===");
 
+  // This statment check if there is any "Account" in the list "accountList".
+  if (accountsList.isEmpty) {
+    print("\n\nThere is not any accounts, Taking you back to === Home Page ===");
+    return;
+  }
+
   String accountNumberString;
   int accountNumber;
   while (true) {

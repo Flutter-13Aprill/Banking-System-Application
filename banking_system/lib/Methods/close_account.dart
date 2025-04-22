@@ -7,6 +7,13 @@ import 'package:banking_system/Validations/check_int_input.dart';
 // This function close the account you enter it's number
 void closeAccount () {
    print("=== Welcome to Close Account Page ===");
+
+   // This statment check if there is any "Account" in the list "accountList".
+  if (accountsList.isEmpty) {
+    print("\n\nThere is not any accounts, Taking you back to === Home Page ===");
+    return;
+  }
+  
   String accountnum;
 
   while (true) {
