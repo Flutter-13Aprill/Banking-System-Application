@@ -1,5 +1,7 @@
-import 'package:banking_system_application/models/transaction.dart';
 import 'package:uuid/uuid.dart';
+
+// Model 
+import 'package:banking_system_application/models/transaction.dart';
 
 class Account {
 

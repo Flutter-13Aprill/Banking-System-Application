@@ -1,6 +1,7 @@
-import 'package:banking_system_application/models/account.dart';
 import 'dart:io';
 
+// Model 
+import 'package:banking_system_application/models/account.dart';
 
 void viewTransactionsHistory({required List<Account> accounts}){
 
